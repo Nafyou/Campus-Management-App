@@ -16,6 +16,8 @@ const CampusView = (props) => {
       <h1>{campus.name}</h1>
       <p>{campus.address}</p>
       <p>{campus.description}</p>
+      <image href={campus.imageUrl}> {campus.imageUrl} </image>
+      <h1>All Students</h1>
       {campus.students.map( student => {
         let name = student.firstname + " " + student.lastname;
         return (

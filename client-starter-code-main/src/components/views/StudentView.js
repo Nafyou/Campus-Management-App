@@ -10,6 +10,7 @@ const StudentView = (props) => {
   // Render a single Student view 
   return (
     <div>
+      <h1> All Students </h1>
       <h1>{student.firstname + " " + student.lastname}</h1>
       <h3>{student.campus.name}</h3>
     </div>

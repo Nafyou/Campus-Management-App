@@ -39,7 +39,7 @@ const Student = db.define("student", {
       max: 4
     },
   },
-  
+
 
 });
 
