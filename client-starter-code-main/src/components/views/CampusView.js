@@ -19,11 +19,10 @@ const CampusView = (props) => {
       <image href={campus.imageUrl}> {campus.imageUrl} </image>
       <h1>All Students</h1>
       {campus.students.map( student => {
-        let name = student.firstname + " " + student.lastname;
         return (
-          <div key={student.id}>
-            <Link to={`/student/${student.id}`}>
-              <h2>{name}</h2>
+          <div key={campus.id}>
+            <Link to={`/campus/${student.id}`}>
+              <h2>{campus.name}</h2>
             </Link>             
           </div>
         );
