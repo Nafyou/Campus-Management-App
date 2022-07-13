@@ -26,11 +26,12 @@ class AllCampusesContainer extends Component {
       <div>
         <Header />
         <AllCampusesView
-          allCampuses={this.props.allCampuses || "No more campuses"}
-          deleteStudent={this.props.deleteCampusThunk} 
+          allCampuses={this.props.allCampuses}
+          deleteCampus={this.props.deleteCampus} 
+          addCampus={this.props.addCampus}
         />
       </div>
-    );
+    )
   }
 }
 
