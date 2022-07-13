@@ -6,11 +6,13 @@ It constructs a React component to display all campuses.
 ================================================== */
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { deleteCampus } from "../../store/actions/actionCreators";
 
 const AllCampusesView = (props) => {
   // If there is no campus, display a message.
-  if (!props.allCampuses.length) {
-    return <div>There are no campuses.</div>;
+  const {allCampuses, deleteCampus} = props;
+  if (!allCampuses.length) {
+    return( <div>There are no campuses.</div>);
   }
 
   // If there is at least one campus, render All Campuses view 
@@ -18,7 +20,8 @@ const AllCampusesView = (props) => {
     <div>
       <h1>All Campuses</h1>
 
-      {props.allCampuses.map((campus) => (
+      {allCampuses.map((campus) => {
+        return(
         <div key={campus.id}>
           <Link to={`/campus/${campus.id}`}>
             <h2>{campus.name}</h2>
@@ -26,11 +29,15 @@ const AllCampusesView = (props) => {
           <h4>campus id: {campus.id}</h4>
           <p>{campus.address}</p>
           <p>{campus.description}</p>
+          <button onClick={() => deleteCampus(campus.id)}>Delete</button>
           <hr/>
         </div>
-      ))}
+      );
+      }
+      )
+      }
       <br/>
-      <Link to={`/`}>
+      <Link to={`/newCampus`}>
         <button>Add New Campus</button>
       </Link>
       <br/><br/>
