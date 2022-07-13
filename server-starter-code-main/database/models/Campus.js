@@ -20,7 +20,12 @@ const Campus = db.define("campus", {
 
   description: {
     type: Sequelize.STRING,
-  }
+  },
+
+  imageUrl: {
+    type: Sequelize.imageUrl,
+    allowNull: true,
+  },
 });
 
 // Export the campus model
