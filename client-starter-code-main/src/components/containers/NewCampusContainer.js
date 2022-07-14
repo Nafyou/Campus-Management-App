@@ -82,6 +82,7 @@ class NewCampusContainer extends Component {
           handleChange = {this.handleChange} 
           handleSubmit={this.handleSubmit}      
         />
+        {console.log("Test Container")}
       </div>          
     );
   }
