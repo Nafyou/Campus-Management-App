@@ -24,12 +24,6 @@ const Student = db.define("student", {
     unique: true,
   },
 
-  imageUrl: {
-    type: Sequelize.imageUrl,
-    allowNull: true,
-    defaultValue: "Student Image URL",
-  },
-
   gpa: {
     type: Sequelize.INTEGER,
     allowNull: true,
