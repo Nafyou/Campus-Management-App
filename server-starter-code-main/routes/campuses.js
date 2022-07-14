@@ -52,7 +52,7 @@ router.put('/:id', ash(async(req, res) => {
   });
   let campus = await Campus.findByPk(req.params.id, {include: [Student]});
   res.status(201).json(campus);
-}))
+}));
 
 // Export router, so that it can be imported to construct the apiRouter (app.js)
 module.exports = router;

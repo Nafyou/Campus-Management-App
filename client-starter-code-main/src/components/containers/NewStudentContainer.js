@@ -52,7 +52,7 @@ class NewStudentContainer extends Component {
       lastname: "", 
       campusId: null, 
       redirect: true, 
-      redirectId: newStudent.id
+      redirectId: newStudent.id,
     });
   }
 
@@ -76,6 +76,7 @@ class NewStudentContainer extends Component {
           handleChange = {this.handleChange} 
           handleSubmit={this.handleSubmit}      
         />
+        {console.log("Test")}
       </div>          
     );
   }
