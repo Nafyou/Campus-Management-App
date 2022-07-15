@@ -1,4 +1,4 @@
-/*==================================================
+/* N AND A==================================================
 Header.js
 
 It contains the Header component to be displayed on every page.
@@ -24,10 +24,10 @@ const useStyles = makeStyles(theme => ({
     fontType: 'bold',
     fontFamily: 'sans-serif', 
     fontSize: '35px', 
-    color: 'darkblue'
+    color: 'white'
   },
   appBar:{
-    backgroundColor: '#fcb6bb',
+    backgroundColor: 'black',
     shadows: ['none'],
   },
   greeting:{

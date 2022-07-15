@@ -19,9 +19,9 @@ class NewCampusContainer extends Component {
     super(props);
     this.state = {
       name: "",
-      address: "", 
+      address: "",
       description: "",
-      imageUrl: "",
+      imageUrl: "https://i.pinimg.com/564x/63/ca/e7/63cae76bf18cdbaceede097c759fd7ac.jpg",
       redirect: false, 
       redirectId: null
     };
@@ -80,7 +80,7 @@ class NewCampusContainer extends Component {
       <div>
         <Header />
         <NewCampusView 
-          handleChange = {this.handleChange} 
+          handleChange ={this.handleChange} 
           handleSubmit={this.handleSubmit}      
         />
         {console.log("Test Container")}
