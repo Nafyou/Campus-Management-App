@@ -1,5 +1,7 @@
 # server-starter-code - complete!
 
+Mohammad Amin (@alapamin) and Nafew Mustafa (@nafyou)
+
 This repository is the server (back-end) starter code for Final Project (CRUD Application).
 
 ### Prerequisites
