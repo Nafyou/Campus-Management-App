@@ -43,7 +43,6 @@ router.post('/', function(req, res, next) {
     Student.create(req.body)
     .then(createdStudent => res.status(200).json(createdStudent))
     .catch(err => next(err));
-    res.status(200).json(createdStudent);
 });
 
 /* DELETE STUDENT */

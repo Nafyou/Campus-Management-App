@@ -21,6 +21,7 @@ class NewStudentContainer extends Component {
       firstname: "", 
       lastname: "", 
       email: "",
+      imageUrl: "https://i.pinimg.com/474x/9a/ed/3a/9aed3a1a5ab33519380a2d2f3dd191ff--pastel-punk-pixel-art.jpg",
       gpa: null,
       campusId: null, 
       redirect: false, 
@@ -37,17 +38,17 @@ class NewStudentContainer extends Component {
 
   // Take action after user click the submit button
   handleSubmit = async event => {
+    {alert("Student successfully added!")}
     event.preventDefault();  // Prevent browser reload/refresh after submit.
-
     let student = {
         firstname: this.state.firstname,
         lastname: this.state.lastname,
         email: this.state.email,
+        imageUrl: this.state.imageUrl,
         gpa: this.state.gpa,
-        campusId: this.state.campusId,
+        campusId: this.state.campusId
         
     };
-    
     // Add new student in back-end database
     let newStudent = await this.props.addStudent(student);
 
@@ -59,26 +60,25 @@ class NewStudentContainer extends Component {
       lastname: "", 
       email: "",
       gpa: null, 
+      campusId: null,
       redirect: true, 
       redirectId: newStudent.id,
     });
   }
   }
-
   // Unmount when the component is being removed from the DOM:
   componentWillUnmount() {
       this.setState({redirect: false, redirectId: null});
   }
-
   // Render new student input form
   render() {
     // Redirect to new student's page after submit
     if(this.state.redirect) {
       return (<Redirect to={`/student/${this.state.redirectId}`}/>)
     }
-
     // Display the input form via the corresponding View component
     return (
+      
       <div>
         <Header />
         <NewStudentView 
