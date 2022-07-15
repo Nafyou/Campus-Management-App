@@ -1,6 +1,6 @@
 # Campus-Management-App
 Group Members: 
-Mohammad Amin [@alapamin](https://github.com/alapamin) and Nafew Mustafa [@nafyou](https://github.com/Nafyou))
+Mohammad Amin [@alapamin](https://github.com/alapamin) and Nafew Mustafa [@nafyou](https://github.com/Nafyou)
 
 As a user, I:
 
