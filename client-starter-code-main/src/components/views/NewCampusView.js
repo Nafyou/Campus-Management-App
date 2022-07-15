@@ -1,6 +1,6 @@
 /*==================================================
 NewCampusView.js
-
+Nafew and Alap
 The Views component is responsible for rendering web page with data provided by the corresponding Container component.
 It constructs a React component to display the new Campus page.
 ================================================== */
@@ -55,11 +55,7 @@ const NewCampusView = (props) => {
             <input type="text" name="name" onChange ={(e) => handleChange(e)} />
             <br/>
             <br/>
-            <label style={{color:'#11153e', fontWeight: 'bold'}}>Campus Id: </label>
-            <input type="text" name="campusId" onChange={(e) => handleChange(e)} />
-            <br/>
-            <br/>
-
+            
             <label style={{color:'#11153e', fontWeight: 'bold'}}>Address: </label>
             <input type="text" name="address" onChange={(e) => handleChange(e)} />
             <br/>

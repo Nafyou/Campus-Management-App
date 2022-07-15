@@ -19,8 +19,7 @@ class NewCampusContainer extends Component {
     super(props);
     this.state = {
       name: "",
-      address: null,
-      campusId: null, 
+      address: "", 
       description: "",
       imageUrl: "",
       redirect: false, 
@@ -41,7 +40,6 @@ class NewCampusContainer extends Component {
 
     let Campus = {
         name: this.state.name,
-        campusId: this.state.campusId,
         address: this.state.address,
         description: this.state.description,
         imageUrl: this.state.imageUrl,
@@ -49,17 +47,20 @@ class NewCampusContainer extends Component {
     
     // Add new Campus in back-end database
     let newCampus = await this.props.addCampus(Campus);
-
+    console.log("this is a new campus",newCampus)
     // Update state, and trigger redirect to show the new Campus
+    if (newCampus){
+    console.log(newCampus)
     this.setState({
-      name: "",
-      campusId: null, 
-      redirect: true,
+      name: "", 
       address: "", 
       description: "",
       imageUrl: "",
-      redirectId: newCampus.id
+      redirect: true,
+      redirectId: newCampus.id,
     });
+
+  }
   }
 
   // Unmount when the component is being removed from the DOM:
