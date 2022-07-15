@@ -1,5 +1,7 @@
 # client-starter-code - complete!
 
+Mohammad Amin (@alapamin) and Nafew Mustafa (@nafyou)
+
 This repository is the client (front-end) starter code for Final Project (CRUD Application).
 
 ### Use the following steps to set up and run the client (front-end) application on your local machine
