@@ -1,6 +1,6 @@
 /*==================================================
 NewStudentView.js
-
+Nafew and Alap
 The Views component is responsible for rendering web page with data provided by the corresponding Container component.
 It constructs a React component to display the new student page.
 ================================================== */
@@ -62,7 +62,7 @@ const NewStudentView = (props) => {
             <br/>
 
             <label style={{color:'#11153e', fontWeight: 'bold'}}>email: </label>
-            <input type="text" name="email" onChange={(e) => handleChange(e)} />
+            <input type="email" name="email" onChange={(e) => handleChange(e)} />
             <br/>
             <br/>
 

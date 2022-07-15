@@ -1,6 +1,6 @@
 /*==================================================
 /src/components/views/index.js
-
+Nafew and Alap
 This is a "barrel" file for the View components, which combines all the exports of individual Views
 and makes it easier to be used by the corresponding Container components.
 

@@ -1,4 +1,4 @@
-/*==================================================
+/*N AND A==================================================
 /src/components/containers\AllCampusesContainer.js
 
 The Container component is responsible for stateful logic and data fetching, and
@@ -9,7 +9,7 @@ import Header from './Header';
 import { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { fetchAllCampusesThunk, deleteCampusThunk} from "../../store/thunks";
+import { fetchAllCampusesThunk, deleteCampusThunk,addCampusThunk} from "../../store/thunks";
 import { AllCampusesView } from "../views";
 import { campus } from '../../store/reducers';
 import { withRouter } from "react-router-dom";
@@ -32,7 +32,7 @@ class AllCampusesContainer extends Component {
           addCampus={this.props.addCampus}
         />
       </div>
-    )
+    );
   }
 }
 
@@ -62,4 +62,5 @@ AllCampusesContainer.propTypes = {
 // Export store-connected container by default
 // AllCampusesContainer uses "connect" function to connect to Redux Store and to read values from the Store 
 // (and re-read the values when the Store State updates).
-export default withRouter(connect(mapState, mapDispatch)(AllCampusesContainer));
+export default connect(mapState, mapDispatch)(AllCampusesContainer);
+//REMOVED WITHROUTER
