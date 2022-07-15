@@ -1,6 +1,6 @@
 # server-starter-code - complete!
 
-Mohammad Amin (@alapamin) and Nafew Mustafa (@nafyou)
+Mohammad Amin [@alapamin](https://github.com/alapamin) and Nafew Mustafa [@nafyou](https://github.com/Nafyou)
 
 This repository is the server (back-end) starter code for Final Project (CRUD Application).
 
